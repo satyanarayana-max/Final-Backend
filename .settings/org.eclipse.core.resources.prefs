@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/example/college/config/WebConfig.java=UTF-8
+encoding//src/main/java/com/example/college/controller/CompilerController.java=UTF-8
+encoding//src/main/java/com/example/college/controller/CourseController.java=UTF-8
+encoding//src/main/java/com/example/college/controller/CourseOutlineController.java=UTF-8
+encoding//src/main/java/com/example/college/dto/CourseResponseDTO.java=UTF-8
+encoding//src/main/java/com/example/college/dto/LessonDto.java=UTF-8
+encoding//src/main/java/com/example/college/model/Course.java=UTF-8
+encoding//src/main/java/com/example/college/security/SecurityConfig.java=UTF-8
+encoding//src/main/java/com/example/college/service/CourseService.java=UTF-8

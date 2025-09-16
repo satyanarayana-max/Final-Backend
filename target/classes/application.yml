@@ -1,0 +1,51 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/CollegeDB
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+server:
+  port: ${PORT:8080}
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:thisisaverysecretkeyforjwtsigningchangeit}
+    expirationMs: ${JWT_EXPIRATION:86400000}
+  upload:
+    dir: C:/CollegeApp/uploads
+  
+
+    
+frontend:
+  url: "http://localhost:5173"
+
+# Swagger UI at /swagger-ui/index.html
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+
+
+
+   
