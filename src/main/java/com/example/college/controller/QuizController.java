@@ -64,7 +64,7 @@ public class QuizController {
             }
 
             // For creation, default published to false
-            boolean published = false;
+            boolean published = true;
 
             Quiz quiz = quizService.createQuiz(req.title, course, teacher, qDtos, published);
             return ResponseEntity.ok(new QuizDto(quiz));
@@ -117,7 +117,7 @@ public class QuizController {
 
     // Delete quiz
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteQuiz(@PathVariable Long id) {
+    public ResponseEntity<?> deleteQuiz(@PathVariable("id") Long id) {
         if (!quizService.existsById(id)) {
             return ResponseEntity.notFound().build();
         }
